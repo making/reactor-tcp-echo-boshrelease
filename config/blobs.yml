@@ -1,0 +1,13 @@
+---
+java/openjdk-1.8.0_111.tar.gz:
+  object_id: 47de66e8-faae-4418-b264-b49fd133b2f2
+  sha: d5ca703f6115cb0564651c2ab7f962030f70d594
+  size: 77747700
+reactor-tcp-echo/reactor-tcp-echo-0.0.1.RELEASE.jar:
+  object_id: 9d87364a-6a59-45b3-90f0-df25e9b465dd
+  sha: 023b3025364d4bed227bf3b5ba255547dc977ba4
+  size: 6560239
+reactor-tcp-echo/reactor-tcp-echo-0.1.0.RELEASE.jar:
+  object_id: 2ab656c0-94a1-4371-bc04-a81e0421a16d
+  sha: 36c43a31c3b464dfb43bcc895d7ddeb66d9f93d1
+  size: 6560258

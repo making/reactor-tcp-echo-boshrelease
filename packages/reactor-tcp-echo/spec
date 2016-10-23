@@ -1,0 +1,7 @@
+---
+name: reactor-tcp-echo
+
+dependencies:
+- java
+files:
+- reactor-tcp-echo/reactor-tcp-echo-0.1.0.RELEASE.jar # https://github.com/making/reactor-tcp-echo/releases/download/0.1.0.RELEASE/reactor-tcp-echo-0.1.0.RELEASE.jar

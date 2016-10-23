@@ -1,0 +1,5 @@
+check process reactor-tcp-echo
+  with pidfile /var/vcap/sys/run/reactor-tcp-echo/pid
+  start program "/var/vcap/jobs/reactor-tcp-echo/bin/ctl start"
+  stop program "/var/vcap/jobs/reactor-tcp-echo/bin/ctl stop"
+  group vcap

@@ -1,0 +1,6 @@
+---
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /tmp/reactor-tcp-echo
+final_name: reactor-tcp-echo

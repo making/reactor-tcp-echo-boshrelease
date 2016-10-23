@@ -1,0 +1,11 @@
+---
+name: reactor-tcp-echo
+templates:
+  ctl.erb: bin/ctl
+packages:
+- reactor-tcp-echo
+- java
+properties:
+  echo.server.port:
+    description: "Port on which server is listening"
+    default: 8080

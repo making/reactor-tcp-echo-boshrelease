@@ -1,0 +1,32 @@
+#!/bin/bash
+
+JOB_NAME=reactor-tcp-echo
+RUN_DIR=/var/vcap/sys/run/$JOB_NAME
+LOG_DIR=/var/vcap/sys/log/$JOB_NAME
+JAVA_HOME=/var/vcap/packages/java
+PIDFILE=${RUN_DIR}/pid
+APP_LOG=/var/vcap/store/$JOB_NAME/log
+JVM_OPTS="-Dapp.log.dir=$APP_LOG"
+export PORT=<%= p("echo.server.port") %>
+
+case $1 in
+
+  start)
+    mkdir -p $RUN_DIR $LOG_DIR $APP_LOG
+    chown -R vcap:vcap $RUN_DIR $LOG_DIR $APP_LOG
+
+    echo $$ > $PIDFILE
+    exec chpst -u vcap:vcap $JAVA_HOME/bin/java $JVM_OPTS -jar /var/vcap/packages/reactor-tcp-echo/reactor-tcp-echo.jar \
+         >>$LOG_DIR/$JOB_NAME.log 2>&1
+    ;;
+
+  stop)
+    kill -9 `cat $PIDFILE`
+    rm -f $PIDFILE
+
+    ;;
+
+  *)
+    echo "Usage: ctl {start|stop}" ;;
+
+esac
