@@ -1,4 +1,4 @@
 # abort script on any command that exits with a non zero value
 set -e
 
-cp -a reactor-tcp-echo/reactor-tcp-echo-0.1.0.RELEASE.jar $BOSH_INSTALL_TARGET/reactor-tcp-echo.jar
+cp -a reactor-tcp-echo/reactor-tcp-echo-0.2.0.RELEASE.jar $BOSH_INSTALL_TARGET/reactor-tcp-echo.jar

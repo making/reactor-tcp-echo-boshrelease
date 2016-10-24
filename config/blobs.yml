@@ -11,3 +11,7 @@ reactor-tcp-echo/reactor-tcp-echo-0.1.0.RELEASE.jar:
   object_id: 2ab656c0-94a1-4371-bc04-a81e0421a16d
   sha: 36c43a31c3b464dfb43bcc895d7ddeb66d9f93d1
   size: 6560258
+reactor-tcp-echo/reactor-tcp-echo-0.2.0.RELEASE.jar:
+  object_id: 8981ad04-09c3-411b-99ca-0e666d3f4f96
+  sha: 7263973da687615268c12ff95dde934362e84511
+  size: 6560449
